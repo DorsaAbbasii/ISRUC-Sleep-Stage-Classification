@@ -56,6 +56,36 @@ The experiments use 30-second sleep epochs with five sleep-stage labels:
 
 
 
+\## Dataset Source and Citation
+
+
+
+This project uses the ISRUC-SLEEP Dataset, a public polysomnography dataset for sleep research.
+
+
+
+Official dataset website:
+
+https://sleeptight.isr.uc.pt/
+
+
+
+The raw dataset files are not included in this repository.
+
+
+
+If you use this dataset, please cite the original ISRUC-Sleep publication:
+
+
+
+Khalighi, S., Sousa, T., Santos, J. M., \& Nunes, U. (2016).  
+
+ISRUC-Sleep: A comprehensive public dataset for sleep researchers.  
+
+Computer Methods and Programs in Biomedicine, 124, 180–192.  
+
+DOI: 10.1016/j.cmpb.2015.10.013
+
 \## Current Results
 
 

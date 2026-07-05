@@ -1,0 +1,26 @@
+# Raw ISRUC dataset - do not upload
+healthy subjects/
+non-normal  sleep-disorder patients/
+*.rec
+*.edf
+
+# Raw annotation files - do not upload
+*_1.txt
+*_2.txt
+*_1.xlsx
+*_2.xlsx
+
+# Large generated feature files
+isruc_features_*.csv
+results/isruc_features_*.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local/system files
+*.log
+.DS_Store
+Thumbs.db

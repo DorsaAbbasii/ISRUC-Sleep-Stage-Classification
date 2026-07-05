@@ -1,0 +1,175 @@
+ISRUC Sleep Staging Clean 4-Channel EEG Baseline
+===============================================
+
+Channel families: C3, C4, O1, O2
+Accepted aliases: {'C3': ['C3-M2', 'C3-A2', 'C3'], 'C4': ['C4-M1', 'C4-A1', 'C4'], 'O1': ['O1-M2', 'O1-A2', 'O1'], 'O2': ['O2-M1', 'O2-A1', 'O2']}
+Model: Random Forest
+Split: subject-wise train/test split
+Total epochs: 99076
+Train epochs: 79171
+Test epochs: 19905
+
+Channels used per subject:
+     group  subject  epochs C3_channel_used C4_channel_used O1_channel_used O2_channel_used
+non_normal        1     880           C3-A2           C4-A1           O1-A2           O2-A1
+non_normal        2     964           C3-A2           C4-A1           O1-A2           O2-A1
+non_normal        3     943           C3-A2           C4-A1           O1-A2           O2-A1
+non_normal        4     963           C3-A2           C4-A1           O1-A2           O2-A1
+non_normal        5     875           C3-A2           C4-A1           O1-A2           O2-A1
+non_normal        6     897           C3-A2           C4-A1           O1-A2           O2-A1
+non_normal        7     933           C3-A2           C4-A1           O1-A2           O2-A1
+non_normal        8     904           C3-A2           C4-A1           O1-A2           O2-A1
+non_normal        9     969           C3-A2           C4-A1           O1-A2           O2-A1
+non_normal       10     842           C3-A2           C4-A1           O1-A2           O2-A1
+non_normal       11     997           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       12     850           C3-A2           C4-A1           O1-A2           O2-A1
+non_normal       13     882           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       14     906           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       15     786           C3-A2           C4-A1           O1-A2           O2-A1
+non_normal       16     883           C3-A2           C4-A1           O1-A2           O2-A1
+non_normal       17     851           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       18     999           C3-A2           C4-A1           O1-A2           O2-A1
+non_normal       19     828           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       20     950           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       21    1054           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       22     849           C3-A2           C4-A1           O1-A2           O2-A1
+non_normal       23     892           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       24     830           C3-A2           C4-A1           O1-A2           O2-A1
+non_normal       25     921           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       26    1062           C3-A2           C4-A1           O1-A2           O2-A1
+non_normal       27     918           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       28     882           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       29     912           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       30     882           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       31     877           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       32    1010           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       33     920           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       34     871           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       35     788           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       36     987           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       37     806           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       38     932           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       39     900           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       40     875              C3              C4              O1              O2
+non_normal       41     974           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       42     812           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       43     747           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       44     932           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       45     906           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       46     863           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       47     838           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       48     981           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       49     793           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       50     905           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       51     856           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       52     912           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       53     910           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       54     814           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       55     879           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       56     956           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       57    1007           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       58     965           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       59     942           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       60     916           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       61     852           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       62     864           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       63     954           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       64     892           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       65    1014           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       66     845           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       67     862           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       68     956           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       69     815           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       70     893           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       71     829           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       72     872           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       73     997           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       74     897           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       75     898           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       76     850           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       77     805           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       78     894           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       79     880           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       80     889           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       81     911           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       82     882           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       83     925           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       84     963           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       85     896           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       86     964           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       87     926           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       88    1002           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       89    1036           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       90     933           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       91     990           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       92     877           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       93     870           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       94     846           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       95     865           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       96     858           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       97     912           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       98     899           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal       99     835           C3-M2           C4-M1           O1-M2           O2-M1
+non_normal      100     861           C3-M2           C4-M1           O1-M2           O2-M1
+   healthy        1     954           C3-A2           C4-A1           O1-A2           O2-A1
+   healthy        2     941           C3-A2           C4-A1           O1-A2           O2-A1
+   healthy        3     824           C3-A2           C4-A1           O1-A2           O2-A1
+   healthy        4     794           C3-A2           C4-A1           O1-A2           O2-A1
+   healthy        5     944           C3-A2           C4-A1           O1-A2           O2-A1
+   healthy        6     853           C3-A2           C4-A1           O1-A2           O2-A1
+   healthy        7     814           C3-A2           C4-A1           O1-A2           O2-A1
+   healthy        8    1000           C3-A2           C4-A1           O1-A2           O2-A1
+   healthy        9     969           C3-A2           C4-A1           O1-A2           O2-A1
+   healthy       10     796           C3-A2           C4-A1           O1-A2           O2-A1
+
+Channel alias counts:
+
+C3:
+  C3-M2: 82
+  C3-A2: 27
+  C3: 1
+
+C4:
+  C4-M1: 82
+  C4-A1: 27
+  C4: 1
+
+O1:
+  O1-M2: 82
+  O1-A2: 27
+  O1: 1
+
+O2:
+  O2-M1: 82
+  O2-A1: 27
+  O2: 1
+
+Label counts:
+label_name
+N2      30965
+Wake    22796
+N3      19515
+REM     13039
+N1      12761
+
+Accuracy: 0.6660
+Macro F1: 0.6109
+
+              precision    recall  f1-score   support
+
+        Wake       0.70      0.92      0.80      4291
+          N1       0.43      0.20      0.27      2701
+          N2       0.64      0.72      0.68      6757
+          N3       0.86      0.70      0.77      3644
+         REM       0.55      0.52      0.53      2512
+
+    accuracy                           0.67     19905
+   macro avg       0.64      0.61      0.61     19905
+weighted avg       0.65      0.67      0.65     19905
+
+Confusion matrix labels: Wake, N1, N2, N3, REM
+[[3965   84  181   12   49]
+ [ 752  537 1009   23  380]
+ [ 565  295 4884  390  623]
+ [  82    1  971 2565   25]
+ [ 297  319  588    3 1305]]

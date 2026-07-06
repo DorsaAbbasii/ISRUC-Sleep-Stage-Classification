@@ -134,3 +134,51 @@
 
 \- Compare GBM with the current Random Forest baseline.
 
+## Week 2 — GBM Baseline
+
+
+
+\### Planned
+
+\- Train a GBM / Gradient Boosting model using the same clean 4-channel EEG feature set.
+
+\- Compare the GBM result with the Random Forest baseline.
+
+
+
+\### Completed
+
+\- Implemented a GBM baseline using HistGradientBoostingClassifier.
+
+\- Used the same 4-channel EEG features and the same subject-wise train/test split.
+
+\- Compared GBM with the previous Random Forest baseline.
+
+
+
+\### Results
+
+
+
+| Experiment | Model | Accuracy | Macro F1 |
+
+|---|---|---:|---:|
+
+| Clean 4-channel EEG baseline | Random Forest | 0.6660 | 0.6109 |
+
+| Clean 4-channel EEG baseline | GBM / HistGradientBoosting | 0.6581 | 0.6355 |
+
+
+
+\### Conclusion
+
+GBM achieved slightly lower accuracy than Random Forest, but improved Macro F1. This means the model became better balanced across classes. The improvement is especially visible for the difficult N1 class.
+
+
+
+\### Next Step
+
+\- Tune GBM hyperparameters.
+
+\- Try the same approach with a 6-channel EEG feature set.
+

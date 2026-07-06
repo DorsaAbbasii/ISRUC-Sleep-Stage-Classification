@@ -86,17 +86,21 @@ Computer Methods and Programs in Biomedicine, 124, 180–192.
 
 DOI: 10.1016/j.cmpb.2015.10.013
 
+
+
 \## Current Results
 
 
 
-| Experiment | Accuracy | Macro F1 |
+| Experiment | Model | Accuracy | Macro F1 |
 
-|---|---:|---:|
+|---|---|---:|---:|
 
-| Clean C3 baseline | 0.6451 | 0.5945 |
+| Clean C3 baseline | Random Forest | 0.6451 | 0.5945 |
 
-| Clean 4-channel EEG baseline | 0.6660 | 0.6109 |
+| Clean 4-channel EEG baseline | Random Forest | 0.6660 | 0.6109 |
+
+| Clean 4-channel EEG baseline | GBM / HistGradientBoosting | 0.6581 | 0.6355 |
 
 
 
@@ -104,7 +108,9 @@ The 4-channel EEG baseline improved the result compared with the single-channel 
 
 
 
-\## Method
+The GBM model achieved a higher Macro F1 score than Random Forest, although its overall accuracy was slightly lower. This suggests that GBM improved the balanced performance across sleep stages, especially for more difficult classes such as N1.
+
+## Method
 
 
 

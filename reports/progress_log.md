@@ -182,3 +182,53 @@ GBM achieved slightly lower accuracy than Random Forest, but improved Macro F1. 
 
 \- Try the same approach with a 6-channel EEG feature set.
 
+## Week 2 — Tuned GBM Baseline
+
+
+
+\### Planned
+
+\- Tune the GBM model using the same clean 4-channel EEG feature set.
+
+\- Compare the tuned GBM result with the previous Random Forest and GBM baselines.
+
+
+
+\### Completed
+
+\- Implemented hyperparameter tuning for HistGradientBoostingClassifier.
+
+\- Tested different learning rates, iteration numbers, leaf nodes, and regularization values.
+
+\- Saved tuning results and the best tuned GBM report.
+
+
+
+\### Results
+
+
+
+| Experiment | Model | Accuracy | Macro F1 |
+
+|---|---|---:|---:|
+
+| Clean 4-channel EEG baseline | Random Forest | 0.6660 | 0.6109 |
+
+| Clean 4-channel EEG baseline | GBM / HistGradientBoosting | 0.6581 | 0.6355 |
+
+| Clean 4-channel EEG baseline | Tuned GBM / HistGradientBoosting | 0.6614 | 0.6395 |
+
+
+
+\### Conclusion
+
+Tuned GBM achieved the best Macro F1 score so far. Random Forest still has slightly higher accuracy, but tuned GBM gives better balanced performance across sleep stages.
+
+
+
+\### Next Step
+
+\- Try a clean 6-channel EEG feature set.
+
+\- Compare 4-channel and 6-channel results.
+

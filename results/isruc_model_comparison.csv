@@ -1,0 +1,3 @@
+﻿experiment,model,accuracy,macro_f1
+Clean 4-channel EEG baseline,Random Forest,0.666,0.6109
+Clean 4-channel EEG baseline,GBM / HistGradientBoosting,0.6581,0.6355

@@ -102,13 +102,16 @@ DOI: 10.1016/j.cmpb.2015.10.013
 
 | Clean 4-channel EEG baseline | GBM / HistGradientBoosting | 0.6581 | 0.6355 |
 
+| Clean 4-channel EEG baseline | Tuned GBM / HistGradientBoosting | 0.6614 | 0.6395 |
+
 
 
 The 4-channel EEG baseline improved the result compared with the single-channel C3 baseline.
 
 
 
-The GBM model achieved a higher Macro F1 score than Random Forest, although its overall accuracy was slightly lower. This suggests that GBM improved the balanced performance across sleep stages, especially for more difficult classes such as N1.
+The tuned GBM model achieved the best Macro F1 score so far. Random Forest still has slightly higher accuracy, but tuned GBM gives better balanced performance across sleep stages.
+
 
 ## Method
 

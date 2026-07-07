@@ -24,3 +24,6 @@ venv/
 *.log
 .DS_Store
 Thumbs.db
+
+# VS Code local settings
+.vscode/

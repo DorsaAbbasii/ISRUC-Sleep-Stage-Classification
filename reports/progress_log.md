@@ -232,3 +232,57 @@ Tuned GBM achieved the best Macro F1 score so far. Random Forest still has sligh
 
 \- Compare 4-channel and 6-channel results.
 
+\## Week 3 — Fair 6-Channel Tuned GBM Comparison
+
+
+
+\### Planned
+
+\- Check whether adding frontal EEG channels improves the model.
+
+\- Compare 4-channel and 6-channel models fairly on the same subject subset.
+
+
+
+\### Completed
+
+\- Checked availability of the 6 EEG channel families: F3, C3, O1, F4, C4, and O2.
+
+\- Found that 109 out of 110 subjects have all required 6 channels.
+
+\- Excluded non\_normal subject 8 because F3 and F4 were missing.
+
+\- Trained a tuned GBM model on the 6-channel feature set.
+
+\- Trained a tuned GBM model on the 4-channel feature set using the same 109 subjects.
+
+\- Compared both models fairly.
+
+
+
+\### Results
+
+
+
+| Experiment | Model | Subjects | Accuracy | Macro F1 |
+
+|---|---|---:|---:|---:|
+
+| 4-channel same-109 | Tuned GBM | 109 | 0.6598 | 0.6373 |
+
+| 6-channel same-109 | Tuned GBM | 109 | 0.6850 | 0.6603 |
+
+
+
+\### Conclusion
+
+Adding F3 and F4 improved the tuned GBM model. The 6-channel tuned GBM achieved the best result so far, with Accuracy = 0.6850 and Macro F1 = 0.6603.
+
+
+
+\### Next Step
+
+\- Analyze feature importance or permutation importance.
+
+\- Identify which EEG channel families and feature types contribute most to the classification.
+

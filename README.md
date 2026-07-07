@@ -88,32 +88,37 @@ DOI: 10.1016/j.cmpb.2015.10.013
 
 
 
-\## Current Results
+\### Current Results
 
 
 
-| Experiment | Model | Accuracy | Macro F1 |
+| Experiment | Model | Subjects | Accuracy | Macro F1 |
 
-|---|---|---:|---:|
+|---|---|---:|---:|---:|
 
-| Clean C3 baseline | Random Forest | 0.6451 | 0.5945 |
+| Clean C3 baseline | Random Forest | 110 | 0.6451 | 0.5945 |
 
-| Clean 4-channel EEG baseline | Random Forest | 0.6660 | 0.6109 |
+| Clean 4-channel EEG baseline | Random Forest | 110 | 0.6660 | 0.6109 |
 
-| Clean 4-channel EEG baseline | GBM / HistGradientBoosting | 0.6581 | 0.6355 |
+| Clean 4-channel EEG baseline | GBM / HistGradientBoosting | 110 | 0.6581 | 0.6355 |
 
-| Clean 4-channel EEG baseline | Tuned GBM / HistGradientBoosting | 0.6614 | 0.6395 |
+| Clean 4-channel EEG baseline | Tuned GBM / HistGradientBoosting | 110 | 0.6614 | 0.6395 |
 
+| Clean 4-channel EEG baseline, same-109 | Tuned GBM / HistGradientBoosting | 109 | 0.6598 | 0.6373 |
 
-
-The 4-channel EEG baseline improved the result compared with the single-channel C3 baseline.
-
-
-
-The tuned GBM model achieved the best Macro F1 score so far. Random Forest still has slightly higher accuracy, but tuned GBM gives better balanced performance across sleep stages.
+| Clean 6-channel EEG baseline, same-109 | Tuned GBM / HistGradientBoosting | 109 | 0.6850 | 0.6603 |
 
 
-## Method
+
+The best result so far was achieved by the tuned GBM model using six EEG channel families: F3, C3, O1, F4, C4, and O2.
+
+
+
+The strict 6-channel setup was available for 109 out of 110 subjects. One subject was excluded because F3 and F4 were missing. For a fair comparison, the 4-channel and 6-channel tuned GBM models were compared on the same 109 subjects.
+
+
+
+\## Method
 
 
 

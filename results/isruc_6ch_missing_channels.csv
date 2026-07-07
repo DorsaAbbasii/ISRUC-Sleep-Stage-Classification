@@ -1,0 +1,2 @@
+﻿group,subject,rec_path,F3_selected,C3_selected,O1_selected,F4_selected,C4_selected,O2_selected,missing_families,has_all_6_channels,available_channels
+non_normal,8,C:\Users\Dorsa Abbasi\Downloads\non-normal  sleep-disorder patients\8\8.rec,MISSING,C3-A2,O1-A2,MISSING,C4-A1,O2-A1,"F3, F4",False,"LOC-A2, ROC-A1, C3-A2, O1-A2, C4-A1, O2-A1, X1, X2, X3, X4, X5, X6, DC3, X7, X8, SaO2, DC8, DC4, DC5, DC6, DC7"

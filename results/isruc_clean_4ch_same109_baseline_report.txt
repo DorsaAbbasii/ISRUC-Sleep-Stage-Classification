@@ -1,0 +1,32 @@
+ISRUC Sleep Staging Clean 4-Channel EEG Baseline Same-109 Subjects
+==================================================================
+
+Channel families: C3, C4, O1, O2
+Model: Random Forest
+Split: subject-wise train/test split
+Excluded subject: non_normal subject 8
+Total epochs: 98172
+Train epochs: 78191
+Test epochs: 19981
+
+Accuracy: 0.6634
+Macro F1: 0.6064
+
+              precision    recall  f1-score   support
+
+        Wake       0.70      0.92      0.79      4373
+          N1       0.45      0.21      0.28      2760
+          N2       0.63      0.73      0.68      6767
+          N3       0.86      0.68      0.76      3719
+         REM       0.53      0.49      0.51      2362
+
+    accuracy                           0.66     19981
+   macro avg       0.64      0.61      0.61     19981
+weighted avg       0.65      0.66      0.65     19981
+
+Confusion matrix labels: Wake, N1, N2, N3, REM
+[[4039   89  179   12   54]
+ [ 787  576 1012   25  360]
+ [ 595  292 4937  368  575]
+ [  79    2 1069 2543   26]
+ [ 293  326  579    4 1160]]

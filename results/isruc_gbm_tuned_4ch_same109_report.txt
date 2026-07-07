@@ -1,0 +1,40 @@
+ISRUC Sleep Staging Tuned GBM 4-Channel EEG Baseline Same-109 Subjects
+======================================================================
+
+Channel families: C3, C4, O1, O2
+Model: Tuned HistGradientBoostingClassifier
+Split: subject-wise train/test split
+Feature file: isruc_features_clean_4ch.csv
+Excluded subject: non_normal subject 8
+Total epochs: 98172
+Subjects: 109
+Train epochs: 78191
+Test epochs: 19981
+
+Best parameters:
+l2_regularization: 0.0
+learning_rate: 0.08
+max_iter: 300
+max_leaf_nodes: 15
+
+Best Accuracy: 0.6598
+Best Macro F1: 0.6373
+
+              precision    recall  f1-score   support
+
+        Wake       0.76      0.88      0.82      4373
+          N1       0.37      0.42      0.39      2760
+          N2       0.70      0.58      0.64      6767
+          N3       0.82      0.76      0.79      3719
+         REM       0.51      0.59      0.55      2362
+
+    accuracy                           0.66     19981
+   macro avg       0.63      0.65      0.64     19981
+weighted avg       0.67      0.66      0.66     19981
+
+Confusion matrix labels: Wake, N1, N2, N3, REM
+[[3859  320   97   26   71]
+ [ 491 1154  633   34  448]
+ [ 428 1057 3930  561  791]
+ [  84   15  753 2836   31]
+ [ 183  600  167    7 1405]]

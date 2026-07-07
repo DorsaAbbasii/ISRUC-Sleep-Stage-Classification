@@ -1,4 +1,7 @@
-﻿experiment,model,accuracy,macro_f1
-Clean 4-channel EEG baseline,Random Forest,0.6660,0.6109
-Clean 4-channel EEG baseline,GBM / HistGradientBoosting,0.6581,0.6355
-Clean 4-channel EEG baseline,Tuned GBM / HistGradientBoosting,0.6614,0.6395
+﻿experiment,model,subjects,accuracy,macro_f1
+Clean C3 baseline,Random Forest,110,0.6451,0.5945
+Clean 4-channel EEG baseline,Random Forest,110,0.6660,0.6109
+Clean 4-channel EEG baseline,GBM / HistGradientBoosting,110,0.6581,0.6355
+Clean 4-channel EEG baseline,Tuned GBM / HistGradientBoosting,110,0.6614,0.6395
+Clean 4-channel EEG baseline same-109,Tuned GBM / HistGradientBoosting,109,0.6598,0.6373
+Clean 6-channel EEG baseline same-109,Tuned GBM / HistGradientBoosting,109,0.6850,0.6603

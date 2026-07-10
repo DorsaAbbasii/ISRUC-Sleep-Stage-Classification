@@ -1,0 +1,93 @@
+ISRUC Enhanced 6-Channel Tuned GBM Feature Importance Analysis
+==============================================================
+
+Model: Tuned HistGradientBoostingClassifier
+Channels: F3, C3, O1, F4, C4, O2
+Feature file: isruc_features_enhanced_6ch.csv
+Method: permutation importance on the test set
+Accuracy: 0.6900
+Macro F1: 0.6692
+
+Top 30 features:
+                  feature  importance_mean  importance_std channel          feature_group           feature_type  importance_positive
+      prev_C3_delta_power         0.020111        0.000681      C3 previous_epoch_context            delta_power             0.020111
+           C4_delta_power         0.015873        0.000397      C4    original_band_power            delta_power             0.015873
+           O2_delta_power         0.013056        0.000676      O2    original_band_power            delta_power             0.013056
+           O1_alpha_power         0.012827        0.000742      O1    original_band_power            alpha_power             0.012827
+      prev_O1_alpha_power         0.011177        0.000890      O1 previous_epoch_context            alpha_power             0.011177
+           C3_delta_power         0.010562        0.000541      C3    original_band_power            delta_power             0.010562
+      prev_C4_delta_power         0.010307        0.000749      C4 previous_epoch_context            delta_power             0.010307
+      prev_O2_alpha_power         0.009838        0.000651      O2 previous_epoch_context            alpha_power             0.009838
+      prev_F4_alpha_power         0.009304        0.000715      F4 previous_epoch_context            alpha_power             0.009304
+           O1_delta_power         0.009151        0.000171      O1    original_band_power            delta_power             0.009151
+       prev_F3_beta_power         0.009112        0.001488      F3 previous_epoch_context             beta_power             0.009112
+                   F4_std         0.008943        0.000929      F4   original_statistical                    std             0.008943
+           F4_delta_power         0.008444        0.000399      F4    original_band_power            delta_power             0.008444
+       C3_rel_delta_power         0.008288        0.000552      C3    relative_band_power            delta_power             0.008288
+      prev_F3_alpha_power         0.007860        0.000347      F3 previous_epoch_context            alpha_power             0.007860
+           O2_theta_power         0.007658        0.000107      O2    original_band_power            theta_power             0.007658
+      prev_O2_delta_power         0.007524        0.000678      O2 previous_epoch_context            delta_power             0.007524
+      prev_F4_delta_power         0.007367        0.000463      F4 previous_epoch_context            delta_power             0.007367
+           O2_alpha_power         0.007047        0.000576      O2    original_band_power            alpha_power             0.007047
+      prev_O1_delta_power         0.006825        0.000466      O1 previous_epoch_context            delta_power             0.006825
+                   F3_std         0.006658        0.000614      F3   original_statistical                    std             0.006658
+       O1_rel_alpha_power         0.006648        0.000440      O1    relative_band_power            alpha_power             0.006648
+           C3_theta_power         0.006599        0.000618      C3    original_band_power            theta_power             0.006599
+       O2_rel_alpha_power         0.006508        0.001689      O2    relative_band_power            alpha_power             0.006508
+       O2_rel_theta_power         0.006026        0.000743      O2    relative_band_power            theta_power             0.006026
+           F3_delta_power         0.005912        0.000914      F3    original_band_power            delta_power             0.005912
+       C4_rel_delta_power         0.005590        0.001383      C4    relative_band_power            delta_power             0.005590
+       C3_rel_theta_power         0.005589        0.000814      C3    relative_band_power            theta_power             0.005589
+           F4_alpha_power         0.005465        0.000255      F4    original_band_power            alpha_power             0.005465
+C3_C4_alpha_power_absdiff         0.005393        0.000741      C3  left_right_difference C4_alpha_power_absdiff             0.005393
+
+Importance by feature group:
+         feature_group  importance_positive
+previous_epoch_context             0.158790
+   original_band_power             0.122582
+   relative_band_power             0.076340
+  original_statistical             0.059276
+ left_right_difference             0.049061
+      band_power_ratio             0.023240
+
+Importance by channel:
+channel  importance_positive
+     C3             0.101331
+     O1             0.087856
+     O2             0.084103
+     F3             0.078301
+     F4             0.071855
+     C4             0.065843
+
+Importance by feature type:
+          feature_type  importance_positive
+           delta_power             0.141742
+           alpha_power             0.100729
+           theta_power             0.064706
+                   std             0.038751
+            beta_power             0.031630
+                energy             0.013145
+     delta_theta_ratio             0.012428
+     alpha_theta_ratio             0.010394
+                   ptp             0.007984
+                   max             0.007033
+C4_alpha_power_absdiff             0.005393
+                   min             0.004249
+                median             0.003523
+                  mean             0.003495
+ C4_beta_power_absdiff             0.003285
+C4_theta_power_absdiff             0.002880
+     F4_energy_absdiff             0.002812
+F4_delta_power_absdiff             0.002776
+   F4_delta_power_diff             0.002244
+O2_alpha_power_absdiff             0.002087
+   O2_alpha_power_diff             0.001825
+       F4_mean_absdiff             0.001800
+        O2_std_absdiff             0.001609
+   C4_delta_power_diff             0.001549
+   O2_theta_power_diff             0.001487
+     C4_energy_absdiff             0.001476
+           O2_std_diff             0.001433
+       C4_mean_absdiff             0.001407
+ O2_beta_power_absdiff             0.001382
+        C4_std_absdiff             0.001227

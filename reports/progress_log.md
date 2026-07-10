@@ -400,4 +400,41 @@ The enhanced feature set improved the tuned 6-channel GBM model. Accuracy increa
 
 ### Next Step
 - Analyze feature importance for the enhanced feature set.
-- Check whether the new temporal/context features or ratio features contributed most to the improvement.
+- Check whether the new temporal/context features or ratio features contributed most to the improvement.S
+
+## Week 3 — Enhanced Feature Importance Analysis
+
+### Completed
+- Performed permutation importance analysis for the enhanced 6-channel tuned GBM model.
+- Analyzed importance by individual feature, feature group, channel, and feature type.
+
+### Results
+
+The most important feature groups were:
+
+| Feature Group | Importance |
+|---|---:|
+| Previous-epoch context | 0.1588 |
+| Original band power | 0.1226 |
+| Relative band power | 0.0763 |
+| Original statistical features | 0.0593 |
+| Left-right channel differences | 0.0491 |
+| Band power ratios | 0.0232 |
+
+The most important channels were:
+
+| Channel | Importance |
+|---|---:|
+| C3 | 0.1013 |
+| O1 | 0.0879 |
+| O2 | 0.0841 |
+| F3 | 0.0783 |
+| F4 | 0.0719 |
+| C4 | 0.0658 |
+
+### Conclusion
+The enhanced model benefited most from previous-epoch context features. This suggests that temporal continuity between neighboring sleep epochs is useful for sleep-stage classification. Original band power and relative band power features also remained important. This supports the idea that the improvement of the enhanced model came mainly from temporal context and frequency-domain EEG information.
+
+### Next Step
+- Run confusion matrix analysis for the enhanced model.
+- Compare whether N1 confusion decreased compared with the original 6-channel GBM model.

@@ -319,3 +319,24 @@ The best model mainly relies on frequency-domain EEG features. The added frontal
 
 ### Next Step
 - Run repeated subject-wise splits or GroupKFold cross-validation to check whether the best result is stable.
+## Week 3 — Repeated Subject-wise Split Evaluation
+
+### Completed
+- Evaluated the best tuned 6-channel GBM model using 5 repeated subject-wise train/test splits.
+- Used the same 6 EEG channel families: F3, C3, O1, F4, C4, and O2.
+- Reported mean and standard deviation for Accuracy, Macro F1, and Weighted F1.
+
+### Results
+
+| Metric | Mean | Standard Deviation |
+|---|---:|---:|
+| Accuracy | 0.6992 | 0.0190 |
+| Macro F1 | 0.6702 | 0.0158 |
+| Weighted F1 | 0.7010 | 0.0175 |
+
+### Conclusion
+The tuned 6-channel GBM model showed stable performance across repeated subject-wise splits. This supports the reliability of the previous best result. The weakest class remains N1, which should be analyzed further in the next step.
+
+### Next Step
+- Perform error analysis using a confusion matrix.
+- Investigate why N1 is harder to classify.

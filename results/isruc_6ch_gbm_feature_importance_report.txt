@@ -1,0 +1,54 @@
+ISRUC 6-Channel Tuned GBM Feature Importance Analysis
+====================================================
+
+Model: Tuned HistGradientBoostingClassifier
+Channels: F3, C3, O1, F4, C4, O2
+Method: permutation importance on the test set
+Accuracy: 0.6850
+Macro F1: 0.6603
+
+Top 20 features:
+       feature  importance_mean  importance_std channel feature_type  importance_positive
+C3_delta_power         0.083086        0.001220      C3  delta_power             0.083086
+C4_delta_power         0.057986        0.000796      C4  delta_power             0.057986
+ F3_beta_power         0.055934        0.001934      F3   beta_power             0.055934
+O1_alpha_power         0.045620        0.002036      O1  alpha_power             0.045620
+O2_delta_power         0.043869        0.000745      O2  delta_power             0.043869
+O2_alpha_power         0.042495        0.002096      O2  alpha_power             0.042495
+F4_alpha_power         0.041507        0.001265      F4  alpha_power             0.041507
+O2_theta_power         0.035773        0.002660      O2  theta_power             0.035773
+F3_alpha_power         0.035551        0.002500      F3  alpha_power             0.035551
+C3_theta_power         0.030492        0.001124      C3  theta_power             0.030492
+F3_delta_power         0.028422        0.001558      F3  delta_power             0.028422
+F4_delta_power         0.027857        0.001183      F4  delta_power             0.027857
+O1_theta_power         0.026682        0.001537      O1  theta_power             0.026682
+O1_delta_power         0.023410        0.001067      O1  delta_power             0.023410
+ O2_beta_power         0.018710        0.001539      O2   beta_power             0.018710
+F3_theta_power         0.018499        0.001438      F3  theta_power             0.018499
+ C3_beta_power         0.016997        0.001209      C3   beta_power             0.016997
+        F4_std         0.015458        0.001137      F4          std             0.015458
+F4_theta_power         0.013252        0.001025      F4  theta_power             0.013252
+ F4_beta_power         0.013139        0.000868      F4   beta_power             0.013139
+
+Importance by channel:
+channel  importance_positive
+     C3             0.160552
+     F3             0.157325
+     O2             0.155655
+     F4             0.126346
+     O1             0.115032
+     C4             0.089317
+
+Importance by feature type:
+feature_type  importance_positive
+ delta_power             0.264630
+ alpha_power             0.187436
+ theta_power             0.130230
+  beta_power             0.116153
+         std             0.045782
+      energy             0.021558
+         max             0.011193
+         ptp             0.010056
+      median             0.007749
+         min             0.004976
+        mean             0.004462

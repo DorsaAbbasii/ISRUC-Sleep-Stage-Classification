@@ -370,3 +370,34 @@ The model performs well on Wake and N3, reasonably on N2, and moderately on REM.
 ### Next Step
 - Improve the feature set to help the model distinguish N1 from neighboring stages.
 - Add temporal/context features and additional EEG frequency features.
+
+## Week 3 — Enhanced 6-Channel Feature Experiment
+
+### Completed
+- Created an enhanced 6-channel feature set based on the clean 6-channel EEG features.
+- Added relative band power, band power ratios, left-right channel differences, and previous-epoch context features.
+- Evaluated the enhanced feature set using the tuned GBM model and 5 repeated subject-wise train/test splits.
+
+### Results
+
+| Experiment | Accuracy Mean | Accuracy Std | Macro F1 Mean | Macro F1 Std |
+|---|---:|---:|---:|---:|
+| Original 6-channel tuned GBM | 0.6992 | 0.0190 | 0.6702 | 0.0158 |
+| Enhanced 6-channel tuned GBM | 0.7131 | 0.0187 | 0.6865 | 0.0146 |
+
+### Class-level result
+
+| Class | Enhanced Mean F1 |
+|---|---:|
+| Wake | 0.8353 |
+| N1 | 0.4193 |
+| N2 | 0.7009 |
+| N3 | 0.8295 |
+| REM | 0.6478 |
+
+### Conclusion
+The enhanced feature set improved the tuned 6-channel GBM model. Accuracy increased from 0.6992 to 0.7131, and Macro F1 increased from 0.6702 to 0.6865. The N1 class also improved from about 0.3895 to about 0.4193, although N1 remains the weakest class.
+
+### Next Step
+- Analyze feature importance for the enhanced feature set.
+- Check whether the new temporal/context features or ratio features contributed most to the improvement.

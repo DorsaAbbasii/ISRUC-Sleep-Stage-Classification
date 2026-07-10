@@ -286,3 +286,36 @@ Adding F3 and F4 improved the tuned GBM model. The 6-channel tuned GBM achieved 
 
 \- Identify which EEG channel families and feature types contribute most to the classification.
 
+## Week 3 — Feature Importance Analysis
+
+### Completed
+- Performed permutation importance analysis for the best tuned 6-channel GBM model.
+- Analyzed importance by individual feature, EEG channel, and feature type.
+
+### Results
+The most important individual features were:
+- C3_delta_power
+- C4_delta_power
+- F3_beta_power
+- O1_alpha_power
+- O2_delta_power
+
+The most important channels were:
+- C3
+- F3
+- O2
+- F4
+- O1
+- C4
+
+The most important feature types were:
+- delta_power
+- alpha_power
+- theta_power
+- beta_power
+
+### Conclusion
+The best model mainly relies on frequency-domain EEG features. The added frontal channels, especially F3 and F4, contributed useful information, which supports the improvement observed in the 6-channel tuned GBM experiment.
+
+### Next Step
+- Run repeated subject-wise splits or GroupKFold cross-validation to check whether the best result is stable.

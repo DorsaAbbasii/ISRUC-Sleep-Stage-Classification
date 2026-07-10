@@ -1,0 +1,45 @@
+ISRUC 6-Channel Tuned GBM Confusion Matrix and Error Analysis
+=============================================================
+
+Model: Tuned HistGradientBoostingClassifier
+Channels: F3, C3, O1, F4, C4, O2
+Evaluation: 5 repeated subject-wise train/test splits
+Confusion matrix: mean normalized by true class
+
+Mean normalized confusion matrix:
+           pred_Wake   pred_N1   pred_N2   pred_N3  pred_REM
+true_Wake   0.843889  0.095966  0.023885  0.002803  0.033457
+true_N1     0.151168  0.402502  0.247300  0.010352  0.188677
+true_N2     0.037341  0.119023  0.662143  0.093375  0.088117
+true_N3     0.014068  0.001941  0.160938  0.811041  0.012011
+true_REM    0.058786  0.199707  0.074507  0.007556  0.659444
+
+Class metrics across repeated splits:
+class  precision_mean  precision_std  recall_mean  recall_std  f1_mean   f1_std  support_mean
+   N1        0.378286       0.027721     0.402502    0.026402 0.389463 0.021280        2544.6
+   N2        0.729914       0.024824     0.662143    0.020277 0.694059 0.014730        6423.6
+   N3        0.834038       0.012684     0.811041    0.040456 0.821974 0.023129        4078.8
+  REM        0.580960       0.052687     0.659444    0.046019 0.617042 0.045270        2548.2
+ Wake        0.815760       0.028133     0.843889    0.048072 0.828639 0.023214        4322.2
+
+Top confusion pairs:
+true_class predicted_class  mean_confusion_rate
+        N1              N2             0.247300
+       REM              N1             0.199707
+        N1             REM             0.188677
+        N3              N2             0.160938
+        N1            Wake             0.151168
+        N2              N1             0.119023
+      Wake              N1             0.095966
+        N2              N3             0.093375
+        N2             REM             0.088117
+       REM              N2             0.074507
+
+Main observation:
+The weakest class is N1 with mean F1 = 0.3895.
+
+Most important N1 confusions:
+true_class predicted_class  mean_confusion_rate
+        N1              N2             0.247300
+        N1             REM             0.188677
+        N1            Wake             0.151168

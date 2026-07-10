@@ -340,3 +340,33 @@ The tuned 6-channel GBM model showed stable performance across repeated subject-
 ### Next Step
 - Perform error analysis using a confusion matrix.
 - Investigate why N1 is harder to classify.
+
+## Week 3 — Confusion Matrix and Error Analysis
+
+### Completed
+- Performed confusion matrix analysis for the tuned 6-channel GBM model.
+- Used 5 repeated subject-wise train/test splits.
+- Computed mean normalized confusion matrix and class-level metrics.
+
+### Results
+
+| Class | Mean F1 |
+|---|---:|
+| Wake | 0.8286 |
+| N1 | 0.3895 |
+| N2 | 0.6941 |
+| N3 | 0.8220 |
+| REM | 0.6170 |
+
+The weakest class was N1.  
+True N1 epochs were most often confused with:
+- N2: 24.7%
+- REM: 18.9%
+- Wake: 15.1%
+
+### Conclusion
+The model performs well on Wake and N3, reasonably on N2, and moderately on REM. The main limitation is N1 classification. This is likely because N1 is a transitional sleep stage and can be difficult to separate from Wake, N2, and REM using simple epoch-level features.
+
+### Next Step
+- Improve the feature set to help the model distinguish N1 from neighboring stages.
+- Add temporal/context features and additional EEG frequency features.

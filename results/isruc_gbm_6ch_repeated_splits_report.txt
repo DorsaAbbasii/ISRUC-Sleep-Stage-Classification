@@ -1,0 +1,111 @@
+ISRUC 6-Channel Tuned GBM Repeated Subject-wise Splits
+======================================================
+
+Model: Tuned HistGradientBoostingClassifier
+Channels: F3, C3, O1, F4, C4, O2
+Evaluation: 5 repeated subject-wise train/test splits
+Feature file: isruc_features_clean_6ch.csv
+Total epochs: 98172
+Subjects: 109
+Number of features: 66
+
+Summary:
+      accuracy  macro_f1  weighted_f1
+mean  0.699235  0.670235     0.701010
+std   0.018991  0.015843     0.017481
+
+Detailed split results:
+ split  train_epochs  test_epochs  accuracy  macro_f1  weighted_f1  Wake_f1    N1_f1    N2_f1    N3_f1   REM_f1
+     1         78191        19981  0.684951  0.660268     0.685453 0.833616 0.410415 0.679616 0.784685 0.593011
+     2         78468        19704  0.730207  0.696602     0.728117 0.864709 0.396934 0.699677 0.826314 0.695374
+     3         78172        20000  0.693700  0.666885     0.698142 0.809842 0.404482 0.710045 0.824160 0.585897
+     4         78134        20038  0.703314  0.671231     0.706658 0.828215 0.359156 0.703643 0.848592 0.616549
+     5         78308        19864  0.684001  0.656191     0.686680 0.806814 0.376328 0.677316 0.826119 0.594378
+
+Classification reports:
+
+Split 1
+Accuracy: 0.6850
+Macro F1: 0.6603
+
+              precision    recall  f1-score   support
+
+        Wake       0.78      0.90      0.83      4373
+          N1       0.39      0.43      0.41      2760
+          N2       0.72      0.64      0.68      6767
+          N3       0.83      0.75      0.78      3719
+         REM       0.59      0.60      0.59      2362
+
+    accuracy                           0.68     19981
+   macro avg       0.66      0.66      0.66     19981
+weighted avg       0.69      0.68      0.69     19981
+
+
+Split 2
+Accuracy: 0.7302
+Macro F1: 0.6966
+
+              precision    recall  f1-score   support
+
+        Wake       0.84      0.89      0.86      4728
+          N1       0.41      0.38      0.40      2447
+          N2       0.71      0.69      0.70      6090
+          N3       0.84      0.81      0.83      4190
+         REM       0.67      0.73      0.70      2249
+
+    accuracy                           0.73     19704
+   macro avg       0.69      0.70      0.70     19704
+weighted avg       0.73      0.73      0.73     19704
+
+
+Split 3
+Accuracy: 0.6937
+Macro F1: 0.6669
+
+              precision    recall  f1-score   support
+
+        Wake       0.83      0.79      0.81      4071
+          N1       0.38      0.43      0.40      2573
+          N2       0.76      0.67      0.71      6705
+          N3       0.82      0.83      0.82      4061
+         REM       0.53      0.65      0.59      2590
+
+    accuracy                           0.69     20000
+   macro avg       0.66      0.67      0.67     20000
+weighted avg       0.71      0.69      0.70     20000
+
+
+Split 4
+Accuracy: 0.7033
+Macro F1: 0.6712
+
+              precision    recall  f1-score   support
+
+        Wake       0.83      0.83      0.83      4177
+          N1       0.34      0.38      0.36      2400
+          N2       0.76      0.66      0.70      6491
+          N3       0.84      0.85      0.85      4197
+         REM       0.57      0.68      0.62      2773
+
+    accuracy                           0.70     20038
+   macro avg       0.67      0.68      0.67     20038
+weighted avg       0.71      0.70      0.71     20038
+
+
+Split 5
+Accuracy: 0.6840
+Macro F1: 0.6562
+
+              precision    recall  f1-score   support
+
+        Wake       0.80      0.82      0.81      4262
+          N1       0.36      0.39      0.38      2543
+          N2       0.71      0.65      0.68      6065
+          N3       0.84      0.81      0.83      4227
+         REM       0.55      0.64      0.59      2767
+
+    accuracy                           0.68     19864
+   macro avg       0.65      0.66      0.66     19864
+weighted avg       0.69      0.68      0.69     19864
+
+

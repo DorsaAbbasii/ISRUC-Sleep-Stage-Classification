@@ -1,0 +1,59 @@
+ISRUC Enhanced 6-Channel Tuned GBM Confusion Matrix and Error Analysis
+======================================================================
+
+Model: Tuned HistGradientBoostingClassifier
+Channels: F3, C3, O1, F4, C4, O2
+Feature file: isruc_features_enhanced_6ch.csv
+Evaluation: 5 repeated subject-wise train/test splits
+Confusion matrix: mean normalized by true class
+
+Overall comparison with original 6-channel GBM:
+Original Accuracy Mean: 0.6992
+Enhanced Accuracy Mean: 0.7131
+Accuracy Improvement: 0.0139
+
+Original Macro F1 Mean: 0.6702
+Enhanced Macro F1 Mean: 0.6865
+Macro F1 Improvement: 0.0163
+
+Original N1 F1 Mean: 0.3895
+Enhanced N1 F1 Mean: 0.4193
+N1 F1 Improvement: 0.0298
+
+Mean normalized confusion matrix:
+           pred_Wake   pred_N1   pred_N2   pred_N3  pred_REM
+true_Wake   0.850220  0.089539  0.023613  0.003696  0.032933
+true_N1     0.155038  0.422192  0.241901  0.008191  0.172677
+true_N2     0.036945  0.109209  0.670659  0.089134  0.094053
+true_N3     0.012329  0.002062  0.157590  0.817534  0.010485
+true_REM    0.047427  0.162181  0.077461  0.006164  0.706767
+
+Class metrics across repeated splits:
+class  precision_mean  precision_std  recall_mean  recall_std  f1_mean   f1_std  support_mean
+   N1        0.417544       0.030691     0.422192    0.025901 0.419270 0.022696        2544.6
+   N2        0.734546       0.020083     0.670659    0.030370 0.700856 0.021150        6423.6
+   N3        0.842578       0.012805     0.817534    0.039217 0.829452 0.022018        4078.8
+  REM        0.598730       0.046255     0.706767    0.041022 0.647777 0.040263        2548.2
+ Wake        0.823410       0.037503     0.850220    0.044131 0.835299 0.018260        4322.2
+
+Top confusion pairs:
+true_class predicted_class  mean_confusion_rate
+        N1              N2             0.241901
+        N1             REM             0.172677
+       REM              N1             0.162181
+        N3              N2             0.157590
+        N1            Wake             0.155038
+        N2              N1             0.109209
+        N2             REM             0.094053
+      Wake              N1             0.089539
+        N2              N3             0.089134
+       REM              N2             0.077461
+
+Main observation:
+The weakest class is still N1 with mean F1 = 0.4193.
+
+Most important N1 confusions:
+true_class predicted_class  mean_confusion_rate
+        N1              N2             0.241901
+        N1             REM             0.172677
+        N1            Wake             0.155038

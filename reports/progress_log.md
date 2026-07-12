@@ -438,3 +438,44 @@ The enhanced model benefited most from previous-epoch context features. This sug
 ### Next Step
 - Run confusion matrix analysis for the enhanced model.
 - Compare whether N1 confusion decreased compared with the original 6-channel GBM model.
+
+## Week 3 — Enhanced Confusion Matrix and Error Analysis
+
+### Completed
+- Performed confusion matrix analysis for the enhanced 6-channel tuned GBM model.
+- Used 5 repeated subject-wise train/test splits.
+- Compared the enhanced model with the original 6-channel GBM model.
+
+### Results
+
+| Metric | Original 6-channel GBM | Enhanced 6-channel GBM | Improvement |
+|---|---:|---:|---:|
+| Accuracy | 0.6992 | 0.7131 | +0.0139 |
+| Macro F1 | 0.6702 | 0.6865 | +0.0163 |
+| N1 F1 | 0.3895 | 0.4193 | +0.0298 |
+
+### Class-level Results
+
+| Class | Mean F1 |
+|---|---:|
+| Wake | 0.8353 |
+| N1 | 0.4193 |
+| N2 | 0.7009 |
+| N3 | 0.8295 |
+| REM | 0.6478 |
+
+### Main Error Pattern
+The weakest class is still N1.
+
+True N1 epochs were most often confused with:
+- N2: 24.2%
+- REM: 17.3%
+- Wake: 15.5%
+
+### Conclusion
+The enhanced feature set improved the overall model performance and increased N1 F1 from 0.3895 to 0.4193. However, N1 remains the most difficult class. This suggests that temporal/context features help, but additional methods may still be needed to better separate N1 from N2, REM, and Wake.
+
+### Next Step
+- Stop adding new experiments temporarily.
+- Update README with the final result table.
+- Prepare a short final project summary for supervisor/practice report.

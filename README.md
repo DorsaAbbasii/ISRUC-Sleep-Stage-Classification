@@ -87,36 +87,24 @@ Computer Methods and Programs in Biomedicine, 124, 180–192.
 DOI: 10.1016/j.cmpb.2015.10.013
 
 
-
-\### Current Results
-
-
+\## Current Results
 
 | Experiment | Model | Subjects | Accuracy | Macro F1 |
-
 |---|---|---:|---:|---:|
-
 | Clean C3 baseline | Random Forest | 110 | 0.6451 | 0.5945 |
-
 | Clean 4-channel EEG baseline | Random Forest | 110 | 0.6660 | 0.6109 |
-
 | Clean 4-channel EEG baseline | GBM / HistGradientBoosting | 110 | 0.6581 | 0.6355 |
-
 | Clean 4-channel EEG baseline | Tuned GBM / HistGradientBoosting | 110 | 0.6614 | 0.6395 |
-
 | Clean 4-channel EEG baseline, same-109 | Tuned GBM / HistGradientBoosting | 109 | 0.6598 | 0.6373 |
-
 | Clean 6-channel EEG baseline, same-109 | Tuned GBM / HistGradientBoosting | 109 | 0.6850 | 0.6603 |
+| Clean 6-channel EEG, repeated splits | Tuned GBM / HistGradientBoosting | 109 | 0.6992 ± 0.0190 | 0.6702 ± 0.0158 |
+| Enhanced 6-channel EEG, repeated splits | Tuned GBM / HistGradientBoosting | 109 | 0.7131 ± 0.0187 | 0.6865 ± 0.0146 |
 
+The best result so far was achieved by the enhanced 6-channel tuned GBM model.
 
+The enhanced feature set improved the model by adding relative band power, band power ratios, left-right channel differences, and previous-epoch context features. Compared with the original 6-channel repeated-split evaluation, Accuracy improved from 0.6992 to 0.7131 and Macro F1 improved from 0.6702 to 0.6865.
 
-The best result so far was achieved by the tuned GBM model using six EEG channel families: F3, C3, O1, F4, C4, and O2.
-
-
-
-The strict 6-channel setup was available for 109 out of 110 subjects. One subject was excluded because F3 and F4 were missing. For a fair comparison, the 4-channel and 6-channel tuned GBM models were compared on the same 109 subjects.
-
-
+The weakest class remains N1. However, N1 F1 improved from 0.3895 to 0.4193 after adding enhanced features.
 
 \## Method
 

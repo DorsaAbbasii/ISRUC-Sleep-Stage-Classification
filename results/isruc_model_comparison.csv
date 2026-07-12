@@ -5,3 +5,5 @@ Clean 4-channel EEG baseline,GBM / HistGradientBoosting,110,0.6581,0.6355
 Clean 4-channel EEG baseline,Tuned GBM / HistGradientBoosting,110,0.6614,0.6395
 Clean 4-channel EEG baseline same-109,Tuned GBM / HistGradientBoosting,109,0.6598,0.6373
 Clean 6-channel EEG baseline same-109,Tuned GBM / HistGradientBoosting,109,0.6850,0.6603
+Clean 6-channel EEG repeated splits,Tuned GBM / HistGradientBoosting,109,0.6992,0.6702
+Enhanced 6-channel EEG repeated splits,Tuned GBM / HistGradientBoosting,109,0.7131,0.6865
